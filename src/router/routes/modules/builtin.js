@@ -2,36 +2,30 @@ const routes = [
   {
     name: "login",
     path: "/login",
-    component: "views/builtin/login/index.vue",
+    component: "builtin/login",
     meta: {
       title: "login",
-      hiddenMenu: true,
+      hideInMenu: true,
     },
   },
   {
     name: "500",
     path: "/500",
-    component: "views/builtin/500/index.vue",
+    component: "builtin/500",
     meta: {
       title: "500",
-      hiddenMenu: true,
-    },
-  },
-  {
-    name: "404",
-    path: "/404",
-    component: "views/builtin/404/index.vue",
-    meta: {
-      title: "404",
-      hiddenMenu: true,
+      hideInMenu: true,
     },
   },
   {
     name: "not-found",
     path: "/:pathMatch(.*)*",
+    component: "builtin/not-found",
     meta: {
       title: "not-found",
-      hiddenMenu: true,
+      hideInMenu: true,
     },
   },
 ];
+
+export default routes;

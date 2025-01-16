@@ -1,7 +1,3 @@
 export const APP_NAME = "vue3-admin";
 
-export const MEDIA_BREAK_POINTS = {
-  MOBILE: 768,
-  TABLET: 992,
-  DESKTOP: 1200,
-};
+export const GLOBAL_SIDER_MENU_TARGET = "__GLOBAL_SIDER_MENU__TARGET";

@@ -1,7 +1,18 @@
 <template>
   <div>
-    <h1>Login</h1>
+    <button @click="handleLogin">Login</button>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useAuthStore } from "@/store/auth";
+import { useRouter } from "vue-router";
+
+const authStore = useAuthStore();
+const router = useRouter();
+
+async function handleLogin() {
+  await authStore.fetchUserInfo();
+  router.push({ name: "home" });
+}
+</script>

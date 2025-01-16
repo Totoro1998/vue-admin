@@ -1,6 +1,8 @@
 <template>
   <aside class="global-sider">
-    <h1>GlobalSider</h1>
+    <GlobalMenu />
   </aside>
 </template>
-<script setup></script>
+<script setup>
+import GlobalMenu from "./GlobalMenu.vue";
+</script>
